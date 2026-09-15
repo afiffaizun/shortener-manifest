@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: shortener-config
+  namespace: shortener
+data:
+  APP_ENV: "production"
+  PORT: "3000"
+  DB_HOST: "postgres-svc"
+  DB_NAME: "shortenerdb"
+
