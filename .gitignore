@@ -1,0 +1,4 @@
+# kredensial lokal — jangan commit
+02-secret.yaml
+*.local.yaml
+.env

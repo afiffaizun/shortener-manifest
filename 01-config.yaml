@@ -7,5 +7,6 @@ data:
   APP_ENV: "production"
   PORT: "3000"
   DB_HOST: "postgres-svc"
+  DB_PORT: "5432"
   DB_NAME: "shortenerdb"
 

@@ -16,7 +16,11 @@ spec:
       serviceAccountName: shortener-sa
       containers:
       - name: api
-        image: nginx:alpine   # placeholder — ganti image app asli kamu nanti
+        # PLACEHOLDER: nginx hanya untuk bukti infra jalan.
+        # Saat image shortener asli siap (listen PORT=3000 dari ConfigMap),
+        # ganti image di bawah lalu ubah containerPort + kedua probe ke 3000,
+        # dan Service targetPort ke 3000.
+        image: nginx:alpine
         ports:
         - containerPort: 80
         envFrom:
